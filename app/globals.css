@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: "DM Serif Display";
+  --font-sans: "DM Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-offwhite text-charcoal font-sans antialiased;
+}
+
+/* Hide the native cursor on devices with a fine pointer (desktop) —
+   a custom dot cursor is rendered in its place. */
+@media (pointer: fine) {
+  body.custom-cursor-enabled,
+  body.custom-cursor-enabled a,
+  body.custom-cursor-enabled button,
+  body.custom-cursor-enabled input,
+  body.custom-cursor-enabled textarea,
+  body.custom-cursor-enabled select,
+  body.custom-cursor-enabled label {
+    cursor: none;
+  }
+}
+
+::selection {
+  background: #c1440e;
+  color: #faf6f1;
+}
+
+/* Premium film-grain overlay (SVG turbulence, no asset needed) */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.09;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
+}
+
+/* Hide scrollbars on horizontal strips while keeping scrollability */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Editorial outline text for oversized typography */
+.text-outline {
+  -webkit-text-stroke: 1px rgba(28, 28, 28, 0.35);
+  color: transparent;
+}
+
+/* Masonry columns for reviews */
+.masonry {
+  columns: 1;
+  column-gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  .masonry {
+    columns: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+.masonry > * {
+  break-inside: avoid;
+}
+
+/* Product gallery zoom-on-hover */
+.zoom-container {
+  overflow: hidden;
+}
+.zoom-container img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.zoom-container:hover img {
+  transform: scale(1.6);
+}
