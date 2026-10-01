@@ -39,7 +39,7 @@ export default function Newsletter() {
           </h2>
           <p className="mt-4 text-charcoal/60">
             Early access to Friday drops, members-only prices and styling notes
-            from the atelier. No spam — just beautiful things.
+            from the atelier. No spam. Just beautiful things.
           </p>
 
           {status === "success" ? (
