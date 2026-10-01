@@ -19,7 +19,7 @@ export default function InstagramStrip() {
           <h2 id="ig-heading" className="font-serif text-3xl sm:text-4xl">
             @threadsbyzuri
           </h2>
-          <p className="mt-2 text-sm text-charcoal/60">Tag us to be featured — #RootedInAfrica</p>
+          <p className="mt-2 text-sm text-charcoal/60">Tag us to be featured. #RootedInAfrica</p>
         </Reveal>
 
         <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">

@@ -28,7 +28,7 @@ export default function ProductReviews({ product }: { product: Product }) {
             <figure className="h-full rounded-2xl border border-charcoal/8 bg-white p-6 shadow-sm">
               <div className="flex gap-0.5" aria-label={`${review.rating} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, s) => (
-                  <svg key={s} width="13" height="13" viewBox="0 0 24 24" fill={s < review.rating ? "#C1440E" : "#E5DACB"} aria-hidden>
+                  <svg key={s} width="13" height="13" viewBox="0 0 24 24" fill={s < review.rating ? "#7B2347" : "#D8D2CD"} aria-hidden>
                     <path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9 2.9-6z" />
                   </svg>
                 ))}

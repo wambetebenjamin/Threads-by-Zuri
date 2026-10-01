@@ -5,10 +5,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        terracotta: { DEFAULT: "#C1440E", dark: "#9A3309", light: "#E05A1F" },
-        offwhite: "#FAF6F1",
-        charcoal: "#1C1C1C",
-        sand: { DEFAULT: "#D9C3A5", light: "#EFE5D6", dark: "#B49A74" },
+        terracotta: { DEFAULT: "#7B2347", dark: "#55152F", light: "#B84B72" },
+        offwhite: "#F7F4F0",
+        charcoal: "#171719",
+        sand: { DEFAULT: "#CFC8C2", light: "#E9E5E1", dark: "#9F9790" },
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],

@@ -32,7 +32,7 @@ export default function BrandStory() {
           <p className="mt-6 leading-relaxed text-offwhite/70">
             Threads by Zuri began at a single tailoring table on Kimathi
             Street with one conviction: African fashion belongs on the world
-            stage — not as a costume, but as couture. Every piece starts with
+            stage. Not as a costume, but as couture. Every piece starts with
             fabric sourced from East and West African markets, is cut by
             Nairobi tailors paid fairly for their craft, and finished with the
             kind of detail you only get when clothes are made by people who
@@ -40,7 +40,7 @@ export default function BrandStory() {
           </p>
           <p className="mt-4 leading-relaxed text-offwhite/70">
             Zuri means <em>beautiful</em> in Swahili. We make clothes for the
-            bold — rooted in Africa, worn everywhere.
+            bold. Rooted in Africa and worn everywhere.
           </p>
           <Link
             href="/our-story"
